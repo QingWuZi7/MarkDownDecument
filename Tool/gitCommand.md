@@ -50,5 +50,20 @@ mean:
 
 `git  push origin master`
 
+- 从远端更新
 
+  `git pull`
 
+  `git branch`查看分支
+
+  `git checkout xx`	切换分支
+
+  `git branck xx`创建分支
+
+  `git restore`还原
+
+  `git checkout -[fileName]`更新文件。建议先merge完成
+
+  
+
+​	
