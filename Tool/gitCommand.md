@@ -46,7 +46,28 @@ mean:
 
 忽略所有名字以~结尾的文件，很多文本Editor以此保存副本。
 
+- 上传到远端仓库
 
+`git push origin master`
 
+master指分支，一定要注意push的分支要正确。
 
+否则会发生timeOut的错误？
 
+- 从远端更新
+
+  `git pull`
+
+  `git branch`查看分支
+
+  `git checkout xx`	切换分支
+
+  `git branck xx`创建分支
+
+  `git restore`还原
+
+  `git checkout -[fileName]`更新文件。建议先merge完成
+
+  
+
+​	
