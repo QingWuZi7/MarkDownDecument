@@ -46,7 +46,9 @@ mean:
 
 忽略所有名字以~结尾的文件，很多文本Editor以此保存副本。
 
+- 上传到远端仓库
 
+`git  push origin master`
 
 
 
