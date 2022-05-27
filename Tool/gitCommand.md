@@ -48,7 +48,11 @@ mean:
 
 - 上传到远端仓库
 
-`git  push origin master`
+`git push origin master`
+
+master指分支，一定要注意push的分支要正确。
+
+否则会发生timeOut的错误？
 
 - 从远端更新
 
