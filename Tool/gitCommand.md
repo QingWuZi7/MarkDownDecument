@@ -26,10 +26,14 @@
 
   `git status` 
 
+  `git checkout source -- fileName`复制a文件到main分支（先切换到main）
+
+  `git rm -r file`
+
   
-
+  
   ![](C:\Users\Cho\Desktop\git1.png)
-
+  
   > git add添加文件，即把文件修改添加到暂存区。git commit提交更改，即吧暂存区所有内容提交到当前分支。
 
 好的习惯——为仓库创建ignore分区
@@ -68,6 +72,26 @@ master指分支，一定要注意push的分支要正确。
 
   `git checkout -[fileName]`更新文件。建议先merge完成
 
-  
 
-​	
+
+
+- 删除（要先切换到其他分支）
+  - `git branch -d localName`删除本地分支(被改动了会提示需要先合并,用-D)
+  - `git branch -D localName`强制删除
+  - `git push origin --delete remoteName`删除远程分支
+
+
+
+	- 查看日志
+
+​	`git log`
+
+​	`git log -g`查看最近一次的commit_id
+
+
+
+- 恢复
+
+​	`git rebase`
+
+先建立一个branch，`git branch x` `git rebase commit_id`
