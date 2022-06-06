@@ -90,7 +90,28 @@ master指分支，一定要注意push的分支要正确。
 
 
 
-- 恢复
+- 恢复（trancked就是add）
+
+​	`git checkout -- file` 还原修改的文件(未tracked)，对已tracked文件撤销修改。
+
+​	`git rm --cached file` 已tracked未commit文件 => untracked
+
+​	`git rm -f file` 从本地删除已add的文件
+
+​	`git reset HEAD file` 撤销commit，回到modified状态
+
+​	`git reset --soft HEAD` 撤销commit，回到tracked状态
+
+​	`git clean` 删除所有untrancked文件。
+
+- `git clean 参数` ——不指定路径参数时会对当前目录操作。
+  - -n 演习？
+  - -f 删除当前目录下的untracked文件(除了.gitignore文件)
+  - -f <path> 指定路径下
+  - -df 删除当前目录下untracked文件和文件夹 （比较：`git rm -f file`）
+  - -xf 删除当前目录下所有untracked文件，包括.gitignore
+
+​	`git reset --hard` `git clean -f` 使本地完全回退到上次commit
 
 ​	`git rebase`
 
